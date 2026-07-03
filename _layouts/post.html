@@ -17,7 +17,7 @@ layout: default
             🔄 更新: {{ page.last_modified_at | date: "%Y-%m-%d" }}
           </span>
         {% endif %}
-        <span class="post-reading-time">📖 阅读时间约 {{ content | reading_time }} 分钟</span>
+        <span class="post-reading-time">📖 阅读时间约 {{ content | number_of_words | divided_by: 300 | plus: 1 }} 分钟</span>
         {% if page.author %}
           <span class="post-author">✍️ {{ page.author }}</span>
         {% endif %}

@@ -101,6 +101,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // --- Auto-generate TOC from page headings ---
+  const tocContainer = document.getElementById('tocContent');
+  if (tocContainer) {
+    const contentArea = document.querySelector('.post-content, .page-content');
+    if (contentArea) {
+      const headings = contentArea.querySelectorAll('h2, h3');
+      if (headings.length > 0) {
+        let tocHtml = '<ul>';
+        headings.forEach(function(h) {
+          const level = h.tagName.toLowerCase();
+          const indent = level === 'h3' ? ' style="padding-left: 1rem;"' : '';
+          const id = h.id || h.textContent.trim().toLowerCase().replace(/[^\w\u4e00-\u9fff]+/g, '-');
+          h.id = id;
+          tocHtml += '<li' + indent + '><a href="#' + id + '">' + h.textContent + '</a></li>';
+        });
+        tocHtml += '</ul>';
+        tocContainer.innerHTML = tocHtml;
+      }
+    }
+  }
+
   // --- Smooth Scroll for TOC links ---
   document.querySelectorAll('.toc a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {

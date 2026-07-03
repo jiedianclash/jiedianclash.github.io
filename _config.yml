@@ -104,28 +104,17 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
 
 # =============================================================================
-# SEO
+# SEO (for jekyll-seo-tag)
 # =============================================================================
 
 author: Clash Node Hub
-twitter:
-  username: 
-  card: summary_large_image
-facebook:
-  app_id:
-  publisher:
 logo: /assets/images/logo.png
 social:
   name: Clash Node Hub
   links:
     - https://github.com/jiedianclash
-
-webmaster_verifications:
-  google:
-  baidu:
 
 # =============================================================================
 # Custom Variables
