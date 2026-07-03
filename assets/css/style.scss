@@ -1,3 +1,6 @@
+---
+---
+
 // =============================================================================
 // Main SCSS — entry point
 // =============================================================================
@@ -12,75 +15,75 @@
 // =============================================================================
 
 @media (max-width: $bp-tablet) {
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-      .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      .page-content-wrapper,
-      .post-content-wrapper {
-        grid-template-columns: 1fr;
-      }
+  .page-content-wrapper,
+  .post-content-wrapper {
+    grid-template-columns: 1fr;
+  }
 
-      .toc-sidebar {
-        display: none;
-      }
+  .toc-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba($bg-primary, 0.98);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid $border-color;
+    padding: $spacing-md;
+
+    &.active {
+      display: flex;
     }
 
-    @media (max-width: $bp-mobile) {
-      .nav-toggle {
-        display: flex;
-      }
-
-      .nav-menu {
-        display: none;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        background: rgba($bg-primary, 0.98);
-        backdrop-filter: blur(16px);
-        border-bottom: 1px solid $border-color;
-        padding: $spacing-md;
-
-        &.active {
-          display: flex;
-        }
-
-        .nav-item {
-          .nav-link {
-            height: 44px;
-          }
-        }
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .post-navigation {
-        grid-template-columns: 1fr;
-      }
-
-      .related-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-section {
-        .hero-title {
-          font-size: 1.8rem;
-        }
-      }
-
-      .card-grid {
-        grid-template-columns: 1fr;
+    .nav-item {
+      .nav-link {
+        height: 44px;
       }
     }
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
