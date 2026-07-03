@@ -1,0 +1,27 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Env
+.env
+*.env.local
+
+# Scripts cache
+scripts/__pycache__/
+scripts/*.pyc
+node_modules/

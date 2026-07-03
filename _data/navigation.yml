@@ -1,0 +1,95 @@
+# =============================================================================
+# Navigation Data
+# =============================================================================
+
+- title: 首页
+  url: /
+  icon: 🏠
+
+- title: 下载
+  url: /downloads/
+  icon: 📥
+  children:
+    - title: Clash for Windows
+      url: /downloads/clash-for-windows/
+    - title: Clash Meta
+      url: /downloads/clash-meta/
+    - title: Clash Verge
+      url: /downloads/clash-verge/
+    - title: ClashX
+      url: /downloads/clashx/
+    - title: Clash for Android
+      url: /downloads/clash-for-android/
+
+- title: 节点
+  url: /nodes/
+  icon: 🔗
+  children:
+    - title: 免费节点
+      url: /nodes/free/
+    - title: 订阅链接
+      url: /nodes/subscription/
+    - title: 节点推荐
+      url: /nodes/recommend/
+
+- title: 教程
+  url: /tutorials/
+  icon: 📖
+  children:
+    - title: 配置教程
+      url: /tutorials/config/
+    - title: 规则设置
+      url: /tutorials/rules/
+    - title: DNS 配置
+      url: /tutorials/dns/
+    - title: TUN 模式
+      url: /tutorials/tun/
+    - title: 订阅管理
+      url: /tutorials/subscription/
+
+- title: 客户端
+  url: /clients/
+  icon: 💻
+  children:
+    - title: Clash Meta
+      url: /clients/clash-meta/
+    - title: Clash Verge
+      url: /clients/clash-verge/
+    - title: ClashX
+      url: /clients/clashx/
+    - title: OpenClash
+      url: /clients/openclash/
+    - title: Mihomo
+      url: /clients/mihomo/
+
+- title: 机场
+  url: /airport/
+  icon: ✈️
+  children:
+    - title: 机场推荐
+      url: /airport/recommend/
+    - title: 机场选购
+      url: /airport/guide/
+
+- title: 工具
+  url: /tools/
+  icon: 🛠️
+  children:
+    - title: 订阅转换
+      url: /tools/subscription-converter/
+    - title: Base64 解码
+      url: /tools/base64/
+    - title: YAML 检查
+      url: /tools/yaml-validator/
+
+- title: FAQ
+  url: /faq/
+  icon: ❓
+
+- title: 博客
+  url: /blog/
+  icon: 📰
+
+- title: 关于
+  url: /about/
+  icon: ℹ️

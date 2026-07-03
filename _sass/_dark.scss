@@ -1,0 +1,46 @@
+// =============================================================================
+// Dark Theme (default)
+// =============================================================================
+
+// Code highlighting (rouge) - Dark
+.highlight {
+  .c { color: #6a9955; font-style: italic; } // Comment
+  .k { color: #569cd6; } // Keyword
+  .n { color: #d4d4d4; } // Name
+  .s { color: #ce9178; } // String
+  .o { color: #d4d4d4; } // Operator
+  .m { color: #b5cea8; } // Number
+  .p { color: #d4d4d4; } // Punctuation
+  .na { color: #9cdcfe; } // Name.Attribute
+  .nc { color: #4ec9b0; } // Name.Class
+  .nd { color: #c586c0; } // Name.Decorator
+  .nf { color: #dcdcaa; } // Name.Function
+  .nx { color: #d4d4d4; } // Name.Other
+  .gd { color: #f44747; } // Generic.Deleted
+  .gi { color: #6a9955; } // Generic.Inserted
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border-light;
+  border-radius: 4px;
+
+  &:hover {
+    background: $text-muted;
+  }
+}
+
+// Selection
+::selection {
+  background: rgba($accent-primary, 0.3);
+  color: $text-primary;
+}

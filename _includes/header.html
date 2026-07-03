@@ -1,0 +1,40 @@
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">{{ site.title }}</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="菜单" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        {% for item in site.navigation %}
+          <li class="nav-item {% if page.url == item.url %}active{% endif %}">
+            <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+          🌙
+        </button>
+        <button class="search-toggle" id="searchToggle" aria-label="搜索">
+          🔍
+        </button>
+      </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="搜索 Clash 教程、客户端、FAQ..." autocomplete="off">
+      <button class="search-close" id="searchClose">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+</header>

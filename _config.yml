@@ -1,0 +1,175 @@
+# =============================================================================
+# Clash Node Hub — Jekyll Configuration
+# =============================================================================
+
+title: Clash 节点资源中心
+tagline: Clash 下载 · 节点 · 教程 · 客户端 · 一站式资源平台
+description: >-
+  提供 Clash 下载、Clash 节点、配置教程、客户端介绍、常见问题、网络知识
+  等内容的一站式资源平台。
+url: "https://jiedianclash.github.io"
+baseurl: ""
+lang: zh-CN
+
+# =============================================================================
+# Theme Settings
+# =============================================================================
+
+theme: null
+remote_theme: null
+
+# =============================================================================
+# Build Settings
+# =============================================================================
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  toc_levels: 2..3
+
+permalink: /:categories/:year/:month/:day/:title/
+
+paginate: 12
+paginate_path: "/blog/page:num/"
+
+# =============================================================================
+# Collections
+# =============================================================================
+
+collections:
+  faq:
+    output: true
+    permalink: /faq/:title/
+  clients:
+    output: true
+    permalink: /clients/:title/
+  tools:
+    output: true
+    permalink: /tools/:title/
+  tutorials:
+    output: true
+    permalink: /tutorials/:title/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: default
+      comments: true
+  - scope:
+      path: ""
+      type: faq
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: clients
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: page
+  - scope:
+      path: "downloads"
+    values:
+      layout: page
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/images/default-og.png
+
+# =============================================================================
+# Plugins
+# =============================================================================
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# =============================================================================
+# SEO
+# =============================================================================
+
+author: Clash Node Hub
+twitter:
+  username: 
+  card: summary_large_image
+facebook:
+  app_id:
+  publisher:
+logo: /assets/images/logo.png
+social:
+  name: Clash Node Hub
+  links:
+    - https://github.com/jiedianclash
+
+webmaster_verifications:
+  google:
+  baidu:
+
+# =============================================================================
+# Custom Variables
+# =============================================================================
+
+version: 1.0.0
+since: 2024
+repo: https://github.com/jiedianclash/jiedianclash.github.io
+
+navigation:
+  - title: 首页
+    url: /
+  - title: 下载
+    url: /downloads/
+  - title: 节点
+    url: /nodes/
+  - title: 教程
+    url: /tutorials/
+  - title: 客户端
+    url: /clients/
+  - title: 机场
+    url: /airport/
+  - title: 工具
+    url: /tools/
+  - title: FAQ
+    url: /faq/
+  - title: 博客
+    url: /blog/
+  - title: 关于
+    url: /about/
+
+# =============================================================================
+# Exclude
+# =============================================================================
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts/
+  - prompts/
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - .github/

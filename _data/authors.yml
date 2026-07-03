@@ -1,0 +1,9 @@
+# =============================================================================
+# Authors
+# =============================================================================
+
+default:
+  name: Clash Node Hub
+  avatar: /assets/images/avatar-default.png
+  bio: Clash 生态资源中心编辑团队
+  github: jiedianclash

@@ -1,0 +1,63 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// Colors - Dark theme (Clash tech aesthetic)
+$bg-primary: #0a0e17;
+$bg-secondary: #111827;
+$bg-card: #1a1f2e;
+$bg-card-hover: #232a3c;
+$bg-elevated: #1e2538;
+
+$text-primary: #e2e8f0;
+$text-secondary: #94a3b8;
+$text-muted: #64748b;
+
+$accent-primary: #3b82f6;
+$accent-secondary: #6366f1;
+$accent-glow: #60a5fa;
+$accent-orange: #f59e0b;
+$accent-green: #22c55e;
+$accent-red: #ef4444;
+$accent-purple: #8b5cf6;
+
+$border-color: #1e293b;
+$border-light: #334155;
+
+// Typography
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+$font-size-base: 16px;
+$line-height-base: 1.7;
+
+// Spacing
+$container-max: 1200px;
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+$spacing-3xl: 4rem;
+
+// Radius
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;
+$transition-slow: 0.4s ease;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+$shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+$shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+
+// Breakpoints
+$bp-mobile: 768px;
+$bp-tablet: 1024px;
+$bp-desktop: 1200px;
