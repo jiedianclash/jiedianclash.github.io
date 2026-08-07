@@ -10,6 +10,7 @@ description: >-
 url: "https://jiedianclash.github.io"
 baseurl: ""
 lang: zh-CN
+timezone: Asia/Shanghai
 
 # =============================================================================
 # Theme Settings
